@@ -18,11 +18,11 @@ export default ({ city, country, title, month, day }) =>
     <View style={styles.container}> 
         <BackgroundImg />
         <View style={styles.wrapper}>
-            <View style={styles.smallContainer}>
+            <View style={styles.detailsContainer}>
                 <ProfileImage small={true}/>
                 <TripDetails city={city} country={country} title={title} />
             </View>
-            <View style={styles.smallContainer}>
+            <View style={styles.dateContainer}>
                 <CalendarDate day={day} month={month} />
             </View>
         </View>
@@ -35,15 +35,23 @@ const styles = StyleSheet.create({
         width:'100%',
         height:140,
     },
-    smallContainer: {
+    detailsContainer: {
         height:'50%',
+        width:'80%',
         flexDirection:'row',
         justifyContent:'flex-start',
         alignItems:'flex-start'
     },
+    dateContainer: {
+        height:'50%',
+        width:'20%',
+        flexDirection:'row',
+        justifyContent:'center',
+        alignItems:'center'
+    },
     wrapper: {
         paddingLeft:20,
-        paddingRight:20,
+        paddingRight:5,
         flexDirection:'row',
         justifyContent:'space-between',
         alignItems:'center',
