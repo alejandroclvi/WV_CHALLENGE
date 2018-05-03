@@ -15,50 +15,15 @@ import CustomImgBackground from '../presentational/CustomImgBackground'
 import ProfileImage from '../presentational/ProfileImage'
 import ProfileStatsBar from '../presentational/ProfileStatsBar'
 import Calendar from './Calendar'
-
-const DATA = [
-  { 
-    section:'FUTURE', 
-    data: [
-      {day:15, month:'July', city:'Los Angeles', country:'United States'}
-    ]
-  },
-  { 
-    section:'JOINED', 
-    data: [
-      {day:15, month:'July', city:'Los Angeles', country:'United States'}
-    ]
-  },
-  { 
-    section:'PAST', 
-    data: [
-      {day:15, month:'July', city:'Los Angeles', country:'United States'}
-    ]
-  },
-]
-
-const STATS = [
-  {
-    section:'followers',
-    data:33
-  },
-  {
-    section:'following',
-    data:80
-  },
-  {
-    section:'trips',
-    data:9
-  }
-]
+import { getUserData, getUserStats } from '../../api/API'
 
 export default ({}) =>
   <View style={styles.container}>
     <CustomImgBackground />
     <ProfileImage />
     <Text style={styles.profileName}> Manuel Calvino </Text>
-    <ProfileStatsBar data={STATS}/>
-    <Calendar data={DATA} />
+    <ProfileStatsBar data={getUserStats}/>
+    <Calendar data={getUserData} />
   </View>
 
 const styles = StyleSheet.create({

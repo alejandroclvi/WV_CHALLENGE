@@ -14,8 +14,8 @@ import {
 
 export default ({ title, city, country }) => 
     <View style={styles.container}>
-        <Text style={styles.title}>Honey Moon</Text>
-        <Text style={styles.location}>Bali, ...</Text>
+        <Text style={styles.text}>Honey Moon</Text>
+        <Text style={styles.text}>Bali, ...</Text>
     </View>
     
     
@@ -27,4 +27,7 @@ const styles = StyleSheet.create({
         alignItems:'flex-start',
         marginLeft:10
     },
+    text: {
+        color:'white'
+    }
 })

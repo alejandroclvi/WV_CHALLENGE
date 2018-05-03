@@ -13,11 +13,13 @@ import {
 } from 'react-native'
 import CalendarHeaderTitle from './CalendarHeaderTitle'
 
+let index = 0
+
 export default ({ sections, active, onTap }) => 
     <View style={styles.container}>
         <View style={styles.wrapper}>
             {
-                sections.map( section => <CalendarHeaderTitle active={active} section={section} onTap={onTap}/> )
+                sections.map( section => <CalendarHeaderTitle key={index++} active={active} section={section} onTap={onTap}/> )
             }
         </View>
     </View>

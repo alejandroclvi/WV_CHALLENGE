@@ -10,13 +10,13 @@ import {
   Text,
   View
 } from 'react-native'
-import ProfileHeader from './components/container/ProfileHeader'
+import Profile from './components/container/Profile'
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ProfileHeader />
+        <Profile />
       </View>
     )
   }

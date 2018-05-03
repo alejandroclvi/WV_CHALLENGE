@@ -26,4 +26,13 @@ const styles = StyleSheet.create({
         justifyContent:'flex-start',
         alignItems:'center'
     },
+    day: {
+        fontSize:16,
+        color:'red',
+        fontWeight:'bold'
+    },
+    month: {
+        color:'white',
+        fontSize:16,
+    }
 })
