@@ -19,7 +19,7 @@ const initialCircleOffSet = 100
 
 export default ({  }) => 
     <View style={styles.backgroundedCustomImg}>
-        <Image style={styles.image} source={require('../../resources/images/default-background-img.jpg')}/>
+        <Image style={styles.image} source={require('../resources/images/default-background-img.jpg')}/>
     </View>
     
 const styles = StyleSheet.create({

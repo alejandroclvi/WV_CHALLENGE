@@ -11,11 +11,11 @@ import {
   Text,
   View
 } from 'react-native'
-import CustomImgBackground from '../presentational/CustomImgBackground'
-import ProfileImage from '../presentational/ProfileImage'
-import ProfileStatsBar from '../presentational/ProfileStatsBar'
+import CustomImgBackground from './CustomImgBackground'
+import ProfileImage from './ProfileImage'
+import ProfileStatsBar from './ProfileStatsBar'
 import Calendar from './Calendar'
-import { getUserData, getUserStats, getUserName, getUserProfileImage } from '../../api/API'
+import { getUserData, getUserStats, getUserName, getUserProfileImage } from '../api/API'
 
 export default ({}) =>
   <View style={styles.container}>

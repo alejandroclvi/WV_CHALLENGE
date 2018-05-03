@@ -10,7 +10,7 @@ import {
   Text,
   View
 } from 'react-native'
-import Profile from './components/container/Profile'
+import Profile from './profile/Profile'
 
 export default class App extends Component {
   render() {

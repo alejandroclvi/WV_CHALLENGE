@@ -11,8 +11,8 @@ import {
   Text,
   View
 } from 'react-native'
-import CalendarList from '../presentational/CalendarList'
-import CalendarHeader from '../presentational/CalendarHeader'
+import CalendarList from './CalendarList'
+import CalendarHeader from './CalendarHeader'
 
 export default class TripCalendar extends Component {
 

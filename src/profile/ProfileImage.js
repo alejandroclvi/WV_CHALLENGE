@@ -13,7 +13,7 @@ import {
 const customRoundedImgRadius = 100
 
 export default ({ small, imgUrl }) => 
-    <Image style={small?styles.smallImage:styles.image} source={imgUrl?{uri:imgUrl}:require('../../resources/images/profile-pic.jpg')}/>
+    <Image style={small?styles.smallImage:styles.image} source={imgUrl?{uri:imgUrl}:require('../resources/images/profile-pic.jpg')}/>
 
 const styles = StyleSheet.create({
     image: {
