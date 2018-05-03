@@ -8,20 +8,18 @@ import React, { Component } from 'react'
 import {
   StyleSheet,
   View,
+  Image
 } from 'react-native'
-import BackgroundImg from './BackgroundImg'
 
 export default ({  }) => 
-    <View style={styles.container}>
-        <BackgroundImg />
-    </View>
+    <Image source={require('../../resources/images/plane-wing.jpg')} style={styles.image}/>
     
     
 
 const styles = StyleSheet.create({
-    container: {
+    image: {
         width:'100%',
-        height:140,
-        backgroundColor:'grey'
+        height:'100%',
+        zIndex:-1
     }
 })
