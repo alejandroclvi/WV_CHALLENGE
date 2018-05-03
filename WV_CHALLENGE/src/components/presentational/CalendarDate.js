@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     container: {
         flexDirection:'column',
         justifyContent:'flex-start',
-        alignItems:'center'
+        alignItems:'center',
     },
     day: {
         fontSize:16,
