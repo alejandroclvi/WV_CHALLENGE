@@ -43,3 +43,7 @@ export const getUserStats = [
     },
     
 ]
+
+export const getUserName = 'Manuel Calvino'
+
+export const getUserProfileImage = 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=adult-beard-boy-220453.jpg&fm=jpg'
