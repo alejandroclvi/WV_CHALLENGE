@@ -13,7 +13,7 @@ import {
 } from 'react-native'
 
 export default ({ active, section, onTap }) =>
-    <TouchableOpacity onPress={ () => onTap(section)}>
+    <TouchableOpacity onPress={ () => onTap(section, true)}>
         <View style={(active===section)?styles.active:styles.container}>
             <Text style={styles.title}>
                 {section}

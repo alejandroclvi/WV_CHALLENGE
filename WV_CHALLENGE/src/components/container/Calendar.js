@@ -19,21 +19,28 @@ export default class TripCalendar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      filter:'FUTURE'
+      filter:'FUTURE',
+      loading:false
+    }
+  }
+
+  componentDidUpdate() {
+    if(this.state.loading) {
+      setTimeout(() => this.setState({loading:false}), 500)
     }
   }
 
   getSections = (data) => data.map(section => section.section)
 
-  handleTap = (filter) => this.setState({filter})
+  handleTap = (filter, loading) => this.setState({filter, loading})
 
   render() {
     const { data } = this.props
-    const { filter } = this.state
+    const { filter, loading } = this.state
     return (
       <View style={styles.container}>
         <CalendarHeader active={filter} sections={this.getSections(data)} onTap={this.handleTap} />
-        <CalendarList data={data} active={filter} />
+        <CalendarList data={data} active={filter} loading={loading} />
       </View>
     )
   }
