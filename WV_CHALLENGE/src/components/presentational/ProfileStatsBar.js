@@ -12,12 +12,12 @@ import {
 } from 'react-native'
 import StatsSection from './StatsSection'
 
-export default ({  }) => 
+export default ({ data }) => 
     <View style={styles.container}>
         <View style={styles.sectionsContainer}>
-            <StatsSection />
-            <StatsSection />
-            <StatsSection />
+            {
+                data.map((section, index) => <StatsSection title={section.section} key={section.section} data={section.data} last={index===data.length-1} />)
+            }
         </View>
     </View>
     
@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
     sectionsContainer: {
         width:'100%',
         flexDirection:'row',
-        justifyContent:'space-around'
+        //justifyContent:'space-around'
     }
 })

@@ -37,12 +37,27 @@ const DATA = [
   },
 ]
 
+const STATS = [
+  {
+    section:'followers',
+    data:33
+  },
+  {
+    section:'following',
+    data:80
+  },
+  {
+    section:'trips',
+    data:9
+  }
+]
+
 export default ({}) =>
   <View style={styles.container}>
     <CustomImgBackground />
     <ProfileImage />
     <Text style={styles.profileName}> Manuel Calvino </Text>
-    <ProfileStatsBar />
+    <ProfileStatsBar data={STATS}/>
     <Calendar data={DATA} />
   </View>
 
