@@ -16,13 +16,34 @@ import ProfileImage from '../presentational/ProfileImage'
 import ProfileStatsBar from '../presentational/ProfileStatsBar'
 import Calendar from './Calendar'
 
+const DATA = [
+  { 
+    section:'FUTURE', 
+    data: [
+      {day:15, month:'July', city:'Los Angeles', country:'United States'}
+    ]
+  },
+  { 
+    section:'JOINED', 
+    data: [
+      {day:15, month:'July', city:'Los Angeles', country:'United States'}
+    ]
+  },
+  { 
+    section:'PAST', 
+    data: [
+      {day:15, month:'July', city:'Los Angeles', country:'United States'}
+    ]
+  },
+]
+
 export default ({}) =>
   <View style={styles.container}>
     <CustomImgBackground />
     <ProfileImage />
     <Text style={styles.profileName}> Manuel Calvino </Text>
     <ProfileStatsBar />
-    <Calendar />
+    <Calendar data={DATA} />
   </View>
 
 const styles = StyleSheet.create({

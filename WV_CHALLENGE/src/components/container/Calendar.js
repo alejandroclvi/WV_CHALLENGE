@@ -15,11 +15,25 @@ import CalendarList from '../presentational/CalendarList'
 import CalendarHeader from '../presentational/CalendarHeader'
 
 export default class TripCalendar extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      filter:'FUTURE'
+    }
+  }
+
+  getSections = (data) => data.map(section => section.section)
+
+  handleTap = (filter) => this.setState({filter})
+
   render() {
+    const { data } = this.props
+    const { filter } = this.state
     return (
       <View style={styles.container}>
-        <CalendarHeader />
-        <CalendarList />
+        <CalendarHeader active={filter} sections={this.getSections(data)} onTap={this.handleTap} />
+        <CalendarList data={data} active={filter} />
       </View>
     )
   }

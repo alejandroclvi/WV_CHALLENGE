@@ -11,15 +11,14 @@ import {
   Text,
   TouchableOpacity
 } from 'react-native'
+import CalendarHeaderTitle from './CalendarHeaderTitle'
 
-export default ({  }) => 
+export default ({ sections, active, onTap }) => 
     <View style={styles.container}>
         <View style={styles.wrapper}>
-            <TouchableOpacity style={styles.active}>
-                <Text style={styles.title}>FUTURE</Text>
-            </TouchableOpacity>
-            <Text style={styles.title}>JOINED</Text>
-            <Text style={styles.title}>PAST</Text>
+            {
+                sections.map( section => <CalendarHeaderTitle active={active} section={section} onTap={onTap}/> )
+            }
         </View>
     </View>
     
@@ -40,17 +39,5 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         justifyContent:'space-around',
         alignItems:'center'
-    },
-    title: {
-        fontSize:14,
-        fontWeight:'bold',
-        color:'#323438',
-    },
-    active: {
-        justifyContent:'center',
-        alignItems:'center',
-        height:'100%',
-        borderBottomWidth:3,
-        borderBottomColor: '#739ac7'
     }
 })

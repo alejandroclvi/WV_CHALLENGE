@@ -16,12 +16,15 @@ import CalendarDate from './CalendarDate'
 
 export default ({  }) => 
     <View style={styles.container}> 
-        <View style={styles.smallContainer}>
-            <ProfileImage small={true}/>
-            <TripDetails />
-        </View>
-        <View style={styles.smallContainer}>
-            <CalendarDate />
+        <BackgroundImg />
+        <View style={styles.wrapper}>
+            <View style={styles.smallContainer}>
+                <ProfileImage small={true}/>
+                <TripDetails />
+            </View>
+            <View style={styles.smallContainer}>
+                <CalendarDate />
+            </View>
         </View>
     </View>
     
@@ -31,11 +34,6 @@ const styles = StyleSheet.create({
     container: {
         width:'100%',
         height:140,
-        flexDirection:'row',
-        justifyContent:'space-between',
-        alignItems:'center',
-        paddingLeft:20,
-        paddingRight:20
     },
     smallContainer: {
         height:'50%',
@@ -43,4 +41,11 @@ const styles = StyleSheet.create({
         justifyContent:'flex-start',
         alignItems:'flex-start'
     },
+    wrapper: {
+        paddingLeft:20,
+        paddingRight:20,
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+    }
 })

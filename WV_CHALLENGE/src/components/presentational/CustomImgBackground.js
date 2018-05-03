@@ -20,7 +20,7 @@ const customRoundedImgRadius = 800
 const initialCircleOffSet = 100
 
 export default ({  }) => 
-    <View overflow='hidden' style={styles.backgroundedCustomImg}>
+    <View style={styles.backgroundedCustomImg}>
         <Image style={styles.image} source={require('../../resources/images/default-background-img.jpg')}/>
     </View>
     
