@@ -10,7 +10,6 @@ import {
   Image,
 } from 'react-native'
 
-const customRoundedImgRadius = 100
 
 export default ({ small }) => 
     <Image style={small?styles.smallImage:styles.image} source={require('../../resources/images/profile-pic.jpg')}/>
@@ -18,14 +17,6 @@ export default ({ small }) =>
     
 
 const styles = StyleSheet.create({
-    image: {
-        width: customRoundedImgRadius,
-        height: customRoundedImgRadius,
-        borderRadius: customRoundedImgRadius / 2,
+    container: {
     },
-    smallImage: {
-        width: customRoundedImgRadius / 2,
-        height: customRoundedImgRadius / 2,
-        borderRadius: customRoundedImgRadius / 4,
-    }
 })
