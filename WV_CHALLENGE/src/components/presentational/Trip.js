@@ -10,11 +10,19 @@ import {
   View,
 } from 'react-native'
 import BackgroundImg from './BackgroundImg'
+import ProfileImage from './ProfileImage'
+import TripDetails from './TripDetails'
+import CalendarDate from './CalendarDate'
 
 export default ({  }) => 
-    <View style={styles.container}>
-        <BackgroundImg />
-
+    <View style={styles.container}> 
+        <View style={styles.smallContainer}>
+            <ProfileImage small={true}/>
+            <TripDetails />
+        </View>
+        <View style={styles.smallContainer}>
+            <CalendarDate />
+        </View>
     </View>
     
     
@@ -25,12 +33,14 @@ const styles = StyleSheet.create({
         height:140,
         flexDirection:'row',
         justifyContent:'space-between',
-        alignItems:'center'
+        alignItems:'center',
+        paddingLeft:20,
+        paddingRight:20
     },
     smallContainer: {
-        height:'100%',
-        flexDirection:'column',
+        height:'50%',
+        flexDirection:'row',
         justifyContent:'flex-start',
-        alignItems:'center'
-    }
+        alignItems:'flex-start'
+    },
 })

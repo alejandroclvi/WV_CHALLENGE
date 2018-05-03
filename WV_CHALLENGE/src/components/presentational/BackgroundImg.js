@@ -12,14 +12,19 @@ import {
 } from 'react-native'
 
 export default ({  }) => 
-    <Image source={require('../../resources/images/plane-wing.jpg')} style={styles.image}/>
+    <View style={styles.backgroundedCustomImg}>
+        <Image source={require('../../resources/images/plane-wing.jpg')} style={styles.image}/>
+    </View>
     
     
 
 const styles = StyleSheet.create({
+    backgroundedCustomImg: {
+        width:'100%',
+        zIndex:-1
+    },
     image: {
         width:'100%',
         height:'100%',
-        zIndex:-1
     }
 })

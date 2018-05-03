@@ -12,10 +12,10 @@ import {
 } from 'react-native'
 
 
-export default ({ title, city, country }) => 
+export default ({ month, day }) => 
     <View style={styles.container}>
-        <Text style={styles.title}>Honey Moon</Text>
-        <Text style={styles.location}>Bali, ...</Text>
+        <Text style={styles.day}>15</Text>
+        <Text style={styles.month}>July</Text>
     </View>
     
     
@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     container: {
         flexDirection:'column',
         justifyContent:'flex-start',
-        alignItems:'flex-start',
-        marginLeft:10
+        alignItems:'center'
     },
 })
