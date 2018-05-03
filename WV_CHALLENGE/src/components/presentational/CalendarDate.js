@@ -18,8 +18,6 @@ export default ({ month, day }) =>
         <Text style={styles.month}>{month}</Text>
     </View>
     
-    
-
 const styles = StyleSheet.create({
     container: {
         flexDirection:'column',

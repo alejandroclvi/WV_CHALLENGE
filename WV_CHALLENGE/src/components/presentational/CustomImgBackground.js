@@ -22,7 +22,6 @@ export default ({  }) =>
         <Image style={styles.image} source={require('../../resources/images/default-background-img.jpg')}/>
     </View>
     
-
 const styles = StyleSheet.create({
     backgroundedCustomImg: {
         zIndex:-1,

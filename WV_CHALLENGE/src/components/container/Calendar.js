@@ -27,10 +27,15 @@ export default class TripCalendar extends Component {
     }
   }
 
-  componentDidUpdate() {
-    console.log(this.state.visibleData)
-    if(this.state.loading) {
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    const { loading, data, filter } = this.state;
+    if(loading) {
       setTimeout(() => this.setState({loading:false}), 500)
+    }
+    if(prevState.filter !== filter) {
+      this.setState({
+        visibleData:this.getVisibleData(data, filter)
+      })
     }
   }
 
@@ -41,7 +46,6 @@ export default class TripCalendar extends Component {
           relevantData.push(...section.data)
         }
     }
-    console.log(relevantData)
     return relevantData
   }
 

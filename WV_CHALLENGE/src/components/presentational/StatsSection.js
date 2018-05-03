@@ -17,8 +17,6 @@ export default ({ title, data, last}) =>
         <Text style={styles.title}>{title}</Text>
     </View>
     
-    
-
 const styles = StyleSheet.create({
     container: {
         height:'70%',

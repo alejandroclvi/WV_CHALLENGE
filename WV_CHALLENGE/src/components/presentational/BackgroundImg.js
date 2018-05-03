@@ -14,9 +14,7 @@ import {
 export default ({  }) => 
     <View style={styles.backgroundedCustomImg}>
         <Image source={require('../../resources/images/plane-wing.jpg')} style={styles.image}/>
-    </View>
-    
-    
+    </View>  
 
 const styles = StyleSheet.create({
     backgroundedCustomImg: {

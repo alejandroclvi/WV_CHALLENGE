@@ -11,7 +11,7 @@ export const getUserData = [
     { 
       section:'JOINED', 
       data: [
-        {title:'title', day:5, month:'July', city:'', country:'United States'},
+        {title:'title', day:5, month:'July', city:'Los Angeles', country:'United States'},
         {title:'title', day:15, month:'June', city:'Los Angeles', country:'United States'},
         {title:'title', day:4, month:'April', city:'Los Angeles', country:'United States'},
         {title:'title', day:16, month:'March', city:'Los Angeles', country:'United States'}

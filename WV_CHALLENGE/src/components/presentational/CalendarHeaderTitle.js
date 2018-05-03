@@ -19,9 +19,7 @@ export default ({ active, section, onTap }) =>
                 {section}
             </Text>
         </View>
-    </TouchableOpacity>
-    
-    
+    </TouchableOpacity> 
 
 const styles = StyleSheet.create({
     title: {

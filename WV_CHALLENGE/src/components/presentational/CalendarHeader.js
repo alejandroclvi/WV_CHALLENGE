@@ -24,8 +24,6 @@ export default ({ sections, active, onTap }) =>
         </View>
     </View>
     
-    
-
 const styles = StyleSheet.create({
     container: {
         width: '100%',

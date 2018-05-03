@@ -21,8 +21,6 @@ export default ({ data }) =>
         </View>
     </View>
     
-    
-
 const styles = StyleSheet.create({
     container: {
         width:'80%',
@@ -33,6 +31,5 @@ const styles = StyleSheet.create({
     sectionsContainer: {
         width:'100%',
         flexDirection:'row',
-        //justifyContent:'space-around'
     }
 })

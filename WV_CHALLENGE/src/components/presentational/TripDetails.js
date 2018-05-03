@@ -16,9 +16,7 @@ export default ({ title, city, country }) =>
     <View style={styles.container}>
         <Text style={styles.text}>{title}</Text>
         <Text style={styles.text}>{`${city}, ${country}`}</Text>
-    </View>
-    
-    
+    </View>    
 
 const styles = StyleSheet.create({
     container: {
