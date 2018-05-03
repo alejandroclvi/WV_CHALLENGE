@@ -14,16 +14,16 @@ import ProfileImage from './ProfileImage'
 import TripDetails from './TripDetails'
 import CalendarDate from './CalendarDate'
 
-export default ({  }) => 
+export default ({ city, country, title, month, day }) => 
     <View style={styles.container}> 
         <BackgroundImg />
         <View style={styles.wrapper}>
             <View style={styles.smallContainer}>
                 <ProfileImage small={true}/>
-                <TripDetails />
+                <TripDetails city={city} country={country} title={title} />
             </View>
             <View style={styles.smallContainer}>
-                <CalendarDate />
+                <CalendarDate day={day} month={month} />
             </View>
         </View>
     </View>

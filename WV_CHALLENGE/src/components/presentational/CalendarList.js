@@ -15,16 +15,13 @@ import LoadingIndicator from './LoadingIndicator'
 
 let index = 0
 
-getActiveSection = (data, active) => data.filter(section => section.section === active)
-
-
 export default ({ loading, data, active }) => 
     loading?
     <LoadingIndicator loading={loading} />
     :
     <FlatList
-        data={this.getActiveSection(data, active)}
-        renderItem={({item}) =>  <Trip /> }
+        data={data}
+        renderItem={ ({item}) =>  <Trip city={item.city} country={item.country} title={item.title} day={item.day} month={item.month}/> }
         keyExtractor={() => (index++).toString() }
     />  
 

@@ -14,8 +14,6 @@ import {
   View
 } from 'react-native'
 
-// const { radius, yOffSet, imgUrl } = this.props;
-
 const customRoundedImgRadius = 800
 const initialCircleOffSet = 100
 

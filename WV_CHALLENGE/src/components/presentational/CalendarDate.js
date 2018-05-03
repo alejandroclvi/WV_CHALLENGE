@@ -14,8 +14,8 @@ import {
 
 export default ({ month, day }) => 
     <View style={styles.container}>
-        <Text style={styles.day}>15</Text>
-        <Text style={styles.month}>July</Text>
+        <Text style={styles.day}>{day}</Text>
+        <Text style={styles.month}>{month}</Text>
     </View>
     
     

@@ -14,8 +14,8 @@ import {
 
 export default ({ title, city, country }) => 
     <View style={styles.container}>
-        <Text style={styles.text}>Honey Moon</Text>
-        <Text style={styles.text}>Bali, ...</Text>
+        <Text style={styles.text}>{title}</Text>
+        <Text style={styles.text}>{`${city}, ${country}`}</Text>
     </View>
     
     

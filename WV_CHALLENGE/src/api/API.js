@@ -2,19 +2,28 @@ export const getUserData = [
     { 
       section:'FUTURE', 
       data: [
-        {day:15, month:'July', city:'Los Angeles', country:'United States'}
+        {title:'title', day:15, month:'October', city:'Los Angeles', country:'United States'},
+        {title:'title', day:27, month:'August', city:'Miami', country:'United States'},
+        {title:'title', day:20, month:'July', city:'Fort Lauderdale', country:'United States'},
+        {title:'title', day:10, month:'June', city:'Memphis', country:'United States'}
       ]
     },
     { 
       section:'JOINED', 
       data: [
-        {day:15, month:'July', city:'Los Angeles', country:'United States'}
+        {title:'title', day:5, month:'July', city:'', country:'United States'},
+        {title:'title', day:15, month:'June', city:'Los Angeles', country:'United States'},
+        {title:'title', day:4, month:'April', city:'Los Angeles', country:'United States'},
+        {title:'title', day:16, month:'March', city:'Los Angeles', country:'United States'}
       ]
     },
     { 
       section:'PAST', 
       data: [
-        {day:15, month:'July', city:'Los Angeles', country:'United States'}
+        {title:'title', day:22, month:'July', city:'Los Angeles', country:'United States'},
+        {title:'title', day:9, month:'August', city:'Los Angeles', country:'United States'},
+        {title:'title', day:12, month:'February', city:'Los Angeles', country:'United States'},
+        {title:'title', day:1, month:'June', city:'Los Angeles', country:'United States'}
       ]
     },
 ]
